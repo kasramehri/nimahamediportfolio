@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Graphic';
-    src: url('./fonts/GraphikMedium.otf') format('woff2');
+    src: url('./GraphikMedium.otf') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
