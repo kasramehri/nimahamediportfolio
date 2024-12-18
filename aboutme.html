@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nima.css">
+    <title>About Me</title>
+</head>
+<body>
+    <style>
+        @media (max-width: 1000px) {
+            .navbar-item-container{
+                padding-inline: 20px;
+            }
+            .navbar-item-container a, .navbar-item-container p{
+                font-size: 14px;
+            }
+            .navbar-item:nth-child(2){
+                display: none;
+            }
+            .navbar-item:nth-child(3){
+                display: none;
+            }
+        }
+    </style>
+    <div class="page-container">
+        <nav class="navbar">
+            <span class="navbar-item-container">
+                <p class="navbar-item">NIMA HAMEDI</p>
+                <p class="navbar-item">DESIGNER</p>
+                <p class="navbar-item">TEHRAN</p>
+                <p class="navbar-item menu-button" onclick="openMenu()">MENU</p>
+            </span>
+        </nav>
+        <div class="about-me-content">
+            <h1>ABOUT ME</h1>
+            <p class="about-me-content-text">As a third-year Industrial Design student at the University of Tehran, I am keen on collaborating with organizations to facilitate their growth. My experience working with various brands has equipped me with the necessary skills, and I am ready to extend my services to other organizations. Fascinated by the intricacies of human-centered processes in UX design, I am dedicated to continuous learning and applying this knowledge to contemporary products.</p>
+            <p id="resume-opener" onclick="openResume()">My Resume</p>
+        </div>
+        <div class="slider-menu" id="slider-menu">
+            <span class="slider-menu-container">
+                <strong class="slider-menu-header exit-button" id="exit-button">EXIT</strong>
+            </span>
+            <span class="slider-menu-container">
+                <strong class="slider-menu-header">Case Studies</strong>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 6.png" id="menu-item-1">DIVAR_HEZAR DASTAN GROUP</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 7.png" id="menu-item-2">SABZE MEYDOoN</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 8.png" id="menu-item-3">HAMPA PLUS</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 9.png" id="menu-item-4">NIRA</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 10.png" id="menu-item-5">KELCK DESIGN</a>
+                <a class="slider-menu-item" href="" data-image="./images/image 1.png" id="menu-item-6">BEHANCE USER REASERCH</a>
+            </span>
+            <span class="slider-menu-container">
+                <a class="slider-menu-header about-button" href="">About Me</a>
+            </span>
+        </div>
+        <div class="menu-image-container" id="menu-image-container">
+            <span class="menu-image-container-box">
+                <img src="" alt="nima" id="image-placeholder">
+            </span>
+        </div>
+        <div class="about-me-slider-container" id="about-me-slider-container">
+            <div class="about-me-slider-divider"></div>
+            <div class="about-me-slider-box">
+                <span class="about-me-box">
+                    <div class="about-me-box-left">
+                        <h2>NIMA HAMEDI</h2>
+                        <span class="about-me-box-left-link">
+                            <strong class="about-me-box-left-link-header">PORTFOLIO</strong>
+                            <a href="">FIGMA</a>
+                            <a href="">BEHANCE</a>
+                            <a href="">INSTAGRAM</a>
+                            <a href="">LINKDIN</a>
+                        </span>
+                        <span class="about-me-box-left-link">
+                            <strong class="about-me-box-left-link-header">CONTACT</strong>
+                            <a href="">+98 9022121038</a>
+                            <a href="">E-mail</a>
+                        </span>
+                    </div>
+                    <div class="about-me-box-right">
+                        <h2>ABOUT ME</h2>
+                        <strong>sevice designer, brand strategist | tehran, iran</strong>
+                        <p>With a specialized focus in UX design within brand strategy and service design realms, I'm dedicated to crafting seamless and engaging experiences for users. My career revolves around leveraging strategic insights to create user-centric designs that elevate brands and services. I excel in merging analytical thinking with creative solutions, aiming to optimize user journeys and enhance overall brand experiences. My passion lies in delivering intuitive designs that resonate with users, fostering meaningful connections between brands and their audiences.</p>
+                        <h2>EXPREIENCES</h2>
+                        <h3>BRAND STRATEGIST</h3>
+                        <strong>Since 2022</strong>
+                        <span class="about-me-box-right-experiences-list">
+                            <div><strong>Bonagh Brand |</strong><p>Sabze Meydoon</p></div>
+                            <div><strong>Freelancer |</strong><p>Viuna Cafe</p></div>
+                            <div><strong>Freelancer |</strong><p>Nexa Group</p></div>
+                            <div><strong>Freelancer |</strong><p>Tejarat Bank Museum</p></div>
+                            <div><strong>Freelancer |</strong><p>Cheshme Publication Bookstores</p></div>
+                            <div><strong>Freelancer |</strong><p>Feili Design</p></div>
+                            <div><strong>Freelancer |</strong><p>Floret</p></div>
+                            <div><strong>Freelancer |</strong><p>Ghoreyshi Group</p></div>
+                            <div><strong>Freelancer |</strong><p>Jobvision</p></div>
+                            <div><strong>Freelancer |</strong><p>Plastic Khouzestan</p></div>
+                            <div><strong>Freelancer |</strong><p>Nabat Paytakht</p></div>
+                        </span>
+                        <h3 style="margin-top:30px">UX DESIGNER_ SERVICE DESIGNER</h3>
+                        <strong>Since 2022 | NoLandacademy | Iran</strong>
+                        <p>Hezar Dastan Group | Divar | Hampa Plus</p>
+                        <h3>GRAPHIC DESIGNER_BRAND IDENTITY DESIGNER</h3>
+                        <strong>Since 2022</strong>
+                        <strong>2023-2022 | Kelck Design Group | Iran</strong>
+                        <span>
+
+                        </span>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="page-image">
+            <img src="./images/RectangleNima.png" alt="nima">
+        </div>
+    </div>
+    <script>
+        const sliderMenu = document.getElementById("slider-menu");
+        const exitButton = document.getElementById("exit-button");
+        function openMenu() {
+            sliderMenu.style.transform = "translateX(0%)";
+        }
+        function closeMenu() {
+            sliderMenu.style.transform = "translateX(100%)";
+        }
+        exitButton.addEventListener("click", closeMenu);
+
+
+        const menuItems = document.querySelectorAll('.slider-menu-item');
+        const menuImageContainer = document.getElementById('menu-image-container');
+        const imagePlaceholder = document.getElementById('image-placeholder');
+
+        menuItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const imageUrl = item.getAttribute('data-image');
+                imagePlaceholder.src = imageUrl;
+                menuImageContainer.style.opacity = '1';
+                menuImageContainer.style.visibility = 'visible';
+            });
+
+            item.addEventListener('mouseleave', () => {
+                menuImageContainer.style.opacity = '0';
+                menuImageContainer.style.visibility = 'hidden';
+            });
+        });
+
+
+        const resumeOpener = document.getElementById('resume-opener');
+        const aboutMeSlider = document.getElementById('about-me-slider-container');
+        function openResume() {
+            aboutMeSlider.style.transform = "translateX(0%)";
+        }
+        function closeResume() {
+            aboutMeSlider.style.transform = "translateX(100%)";
+        }
+        exitButton.addEventListener("click", closeResume);
+        document.addEventListener('click', function(event) {
+            const aboutMeSlider = document.getElementById('about-me-slider-container');
+            const resumeOpener = document.getElementById('resume-opener');
+            
+            if (!aboutMeSlider.contains(event.target) && event.target !== resumeOpener) {
+                closeResume();
+            }
+        });
+    </script>
+</body>
+</html>

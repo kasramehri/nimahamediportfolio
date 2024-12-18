@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nima.css">
+    <title>Sabzemeydoon</title>
+</head>
+<body>
+    <style>
+        @media (max-width: 1000px) {
+            .navbar-item-container{
+                padding-inline: 20px;
+            }
+            .navbar-item-container a, .navbar-item-container p{
+                font-size: 14px;
+            }
+            .navbar-item:nth-child(2){
+                display: none;
+            }
+            .navbar-item:nth-child(3){
+                display: none;
+            }
+        }
+    </style>
+    <div class="page-container">
+        <nav class="navbar">
+            <span class="navbar-item-container">
+                <p class="navbar-item">NIMA HAMEDI</p>
+                <p class="navbar-item">DESIGNER</p>
+                <p class="navbar-item">TEHRAN</p>
+                <p class="navbar-item menu-button" onclick="openMenu()">MENU</p>
+            </span>
+        </nav>
+        <div class="slider-menu" id="slider-menu">
+            <span class="slider-menu-container">
+                <strong class="slider-menu-header exit-button" id="exit-button">EXIT</strong>
+            </span>
+            <span class="slider-menu-container">
+                <strong class="slider-menu-header">Case Studies</strong>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 6.png" id="menu-item-1">DIVAR_HEZAR DASTAN GROUP</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 7.png" id="menu-item-2">SABZE MEYDOoN</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 8.png" id="menu-item-3">HAMPA PLUS</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 9.png" id="menu-item-4">NIRA</a>
+                <a class="slider-menu-item" href="" data-image="./images/Frame 10.png" id="menu-item-5">KELCK DESIGN</a>
+                <a class="slider-menu-item" href="" data-image="./images/image 1.png" id="menu-item-6">BEHANCE USER REASERCH</a>
+            </span>
+            <span class="slider-menu-container">
+                <a class="slider-menu-header about-button" href="">About Me</a>
+            </span>
+        </div>
+        <div class="menu-image-container" id="menu-image-container">
+            <span class="menu-image-container-box">
+                <img src="" alt="nima" id="image-placeholder">
+            </span>
+        </div>
+        <div class="company-page-content">
+            <div class="company-page-header">
+                <h1>BEHANCE</h1>
+                <span class="company-page-header-info">
+                    <p>ux design</p>
+                </span>
+            </div>
+            <div class="company-page-text-container">
+                <div class="company-page-text-container-col" style="width: 100%;">
+                    <p>personal project _ ux assassination </p>
+                </div>
+                <div class="company-page-text-container-col">
+                    
+                </div>
+                <div class="company-page-text-container-col">
+                    <p></p>
+                </div>
+            </div>
+            <div class="company-page-image">
+                <img style="height: 500px;object-fit:cover" src="./images/6a3c35ac705ce7618c909ca87cb8a5ff.jpeg" alt="nima">
+            </div>
+        </div>
+    </div>
+    <script>
+        const sliderMenu = document.getElementById("slider-menu");
+        const exitButton = document.getElementById("exit-button");
+        function openMenu() {
+            sliderMenu.style.transform = "translateX(0%)";
+        }
+        function closeMenu() {
+            sliderMenu.style.transform = "translateX(100%)";
+        }
+        exitButton.addEventListener("click", closeMenu);
+
+
+        const menuItems = document.querySelectorAll('.slider-menu-item');
+        const menuImageContainer = document.getElementById('menu-image-container');
+        const imagePlaceholder = document.getElementById('image-placeholder');
+
+        menuItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const imageUrl = item.getAttribute('data-image');
+                imagePlaceholder.src = imageUrl;
+                menuImageContainer.style.opacity = '1';
+                menuImageContainer.style.visibility = 'visible';
+            });
+
+            item.addEventListener('mouseleave', () => {
+                menuImageContainer.style.opacity = '0';
+                menuImageContainer.style.visibility = 'hidden';
+            });
+        });
+    </script>
+</body>
+</html>
