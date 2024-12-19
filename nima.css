@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb{
 .menu-image-container-box img{
     width: 100%;
     height: 100%;
-    display: inline-block;
+    display: block;
     object-fit: cover;
 }
 .home-content{
@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb{
 }
 .page-image img{
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 
 
@@ -253,7 +253,7 @@ body::-webkit-scrollbar-thumb{
 }
 .company-page-image img{
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 .about-me-content{
     background-color: var(--bgclr);
@@ -304,14 +304,27 @@ body::-webkit-scrollbar-thumb{
     right: 0;
     top: 0;
     height: 100%;
+    overflow-y: auto;
     background-color: #E7E7E7;
     display: flex;
     transform: translate(100%);
     transition: transform 0.3s ease-in;
+    padding-bottom: 30px;
+    overflow-x: auto;
+}
+
+.about-me-slider-container::-webkit-scrollbar{
+    width: 5px;
+}
+.about-me-slider-container::-webkit-scrollbar-track{
+    background-color: var(--bgclr);
+}
+.about-me-slider-container::-webkit-scrollbar-thumb{
+    background-color: var(--textclr);
 }
 .about-me-slider-divider{
     width: 11px;
-    height: 100%;
+    height: 150%;
     background-color: var(--textclr);
 }
 .about-me-slider-box{
@@ -395,7 +408,7 @@ body::-webkit-scrollbar-thumb{
     line-height: 16.1px;
     text-align: left;
     opacity: 0.7;
-    text-transform: uppercase;
+   
 }
 .about-me-box-right p{
     font-family: Helvetica , 'Graphic';
@@ -542,5 +555,10 @@ body::-webkit-scrollbar-thumb{
     }
     .about-me-slider-box{
         padding-inline: 10px;
+    }
+    .about-me-slider-divider{
+        width: 11px;
+        height: 220%;
+        background-color: var(--textclr);
     }
 }
